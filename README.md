@@ -10,6 +10,33 @@ This project demonstrates a complete machine learning workflow, including data c
 
 ---
 
+## How to Run
+
+Open `notebook/churn_prediction.ipynb` in Jupyter Notebook or VS Code and run the cells from top to bottom. The dataset is stored in `data/customer_churn.csv`.
+
+---
+
+## Project Structure
+
+- `data/` contains the customer churn dataset.
+- `notebook/` contains the full machine learning workflow.
+- `model/` contains the saved model, scaler, and feature column list.
+- `README.md` summarizes the project and results.
+
+---
+
+## Key Skills Demonstrated
+
+- Data cleaning and missing value handling
+- Exploratory data analysis
+- Categorical feature encoding
+- Model training and comparison
+- Cross-validation and hyperparameter tuning
+- Feature importance analysis
+- Model saving with Joblib
+
+---
+
 ## Dataset
 
 The dataset contains customer demographic information, service usage information, contract details, payment methods, and customer charges.
@@ -143,3 +170,21 @@ The best parameters found were:
     "min_samples_split": 2,
     "n_estimators": 100
 }
+```
+
+---
+
+## Limitations and Future Improvements
+
+This project is a learning-focused machine learning project, so there are still several areas that can be improved:
+
+- The dataset has class imbalance, so accuracy alone may not fully describe model performance.
+- The model comparison is still simple and focuses on a small set of common machine learning models.
+- The project currently saves the trained model, but it does not include a deployed prediction application yet.
+
+Future improvements could include:
+
+- Using SMOTE or class weighting to better handle class imbalance.
+- Adding ROC-AUC, precision, recall, and F1-score analysis for a more complete evaluation.
+- Trying more advanced models such as XGBoost.
+- Building a simple prediction app using Streamlit or Flask.
